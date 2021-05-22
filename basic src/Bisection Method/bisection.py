@@ -21,8 +21,6 @@ def bisection(min, max, func):
         bx = (ax + cx) / 2
         by = func(bx)
 
-        print(f"ax: {ax}, ay: {ay}, bx: {bx}, by: {by}, cx: {cx}, cy: {cy}")
-
         if ay * by <= 0:
             cx = bx
             cy = by
@@ -31,8 +29,6 @@ def bisection(min, max, func):
             ay = by
 
         ea = np.abs(bx - oldBx) / bx
-
-        print(f"oldBx: {oldBx}, ea: {ea}")
 
         if ea != 0 and ea < es:
             break

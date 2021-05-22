@@ -22,8 +22,6 @@ def falsePosition(min, max, func):
         bx = (ax * cy - cx * ay) / (cy - ay)
         by = func(bx)
 
-        print(f"ax: {ax}, ay: {ay}, bx: {bx}, by: {by}, cx: {cx}, cy: {cy}")
-
         if ay * by <= 0:
             cx = bx
             cy = by
@@ -32,8 +30,6 @@ def falsePosition(min, max, func):
             ay = by
 
         ea = np.abs(bx - oldBx) / bx
-
-        print(f"oldBx: {oldBx}, ea: {ea}")
 
         cnt += 1
 
