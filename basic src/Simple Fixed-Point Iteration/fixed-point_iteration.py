@@ -11,8 +11,6 @@ def fixedPointIteration(start, func):
 
         ea = np.abs((x - oldX) / x)
 
-        print(f"x: {oldX}, func(x): {x}, ea: {ea}")
-
         if ea != 0 and ea < es:
             break
 

@@ -10,8 +10,6 @@ def secant(num1, num2, func):
         temp = num1 - fnum1 * (num2 - num1) / (fnum2 - fnum1)
         ea = np.abs((num2 - num1) / num2)
 
-        print(f"num1 : {num1}, fnum1: {fnum1}, ea : {ea}")
-
         if ea < es:
             break
 
